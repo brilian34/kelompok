@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Digital | Brilian XI RPL</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body class="bg-slate-50 scroll-smooth">
+
+<!-- =============== NAVBAR =============== -->
+<header class="sticky top-0 z-50 shadow bg-white">
+  <nav class="flex items-center justify-between px-8 py-4">
+    <h1 class="text-xl font-bold text-indigo-600">BrandKita</h1>
+
+    <button id="menu-btn" class="md:hidden">
+      <span class="material-symbols-outlined text-gray-700">menu</span>
+    </button>
+
+    <ul class="hidden md:flex items-center gap-6 font-medium">
+      <li><a href="#hero" class="hover:text-indigo-600">Beranda</a></li>
+      <li><a href="#tentang" class="hover:text-indigo-600">Profil</a></li>
+      <li><a href="#portofolio" class="hover:text-indigo-600">Karya</a></li>
+      <li>
+        <a id="loginLink"
+           href="login.html"
+           class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">
+           Masuk
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="menu" class="hidden md:hidden bg-white px-6 py-4 border-t">
+    <ul class="flex flex-col gap-4">
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#tentang">Profil</a></li>
+      <li><a href="#portofolio">Karya</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- =============== HERO =============== -->
+<section id="hero" class="py-20 px-6 bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Solusi Website Modern</h2>
+      <p class="mb-6 opacity-90">
+        Membantu membangun website profesional, responsif, dan mudah dikembangkan.
+      </p>
+      <a href="#portofolio"
+         class="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold">
+         Lihat Karya
+      </a>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 text-center">
+      <div class="bg-white/20 p-4 rounded-xl">
+        <p class="text-2xl font-bold">50+</p>
+        <span class="text-sm">Proyek</span>
+      </div>
+      <div class="bg-white/20 p-4 rounded-xl">
+        <p class="text-2xl font-bold">10+</p>
+        <span class="text-sm">Klien</span>
+      </div>
+      <div class="bg-white/20 p-4 rounded-xl">
+        <p class="text-2xl font-bold">3+</p>
+        <span class="text-sm">Tahun</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== TENTANG =============== -->
+<section id="tentang" class="py-20 px-6 bg-white">
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+  <div>
+    <h2 class="text-3xl font-bold mb-4">Profil Singkat</h2>
+    <p class="text-gray-700">
+      BrandKita adalah tim pengembang website yang fokus pada tampilan modern,
+      performa optimal, dan pengalaman pengguna yang baik.
+    </p>
+  </div>
+
+  <div class="bg-indigo-50 p-6 rounded-xl">
+    <h3 class="font-semibold mb-3">Keunggulan</h3>
+    <ul class="space-y-2">
+      <li>✔ Responsive Design</li>
+      <li>✔ Struktur Kode Rapi</li>
+      <li>✔ Mudah Maintenance</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- =============== PORTOFOLIO =============== -->
+<section id="portofolio" class="py-20 px-6 bg-slate-100">
+<h2 class="text-3xl font-bold text-center mb-10">Hasil Karya</h2>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+  <div class="group relative rounded-xl overflow-hidden shadow">
+    <img src="img/pc1.jpeg" class="h-56 w-full object-cover">
+    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition
+                flex items-center justify-center text-white font-semibold">
+      Company Profile
+    </div>
+  </div>
+
+  <div class="group relative rounded-xl overflow-hidden shadow">
+    <img src="img/pc2.jpeg" class="h-56 w-full object-cover">
+    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition
+                flex items-center justify-center text-white font-semibold">
+      Landing Page
+    </div>
+  </div>
+
+  <div class="group relative rounded-xl overflow-hidden shadow">
+    <img src="img/pc3.jpeg" class="h-56 w-full object-cover">
+    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition
+                flex items-center justify-center text-white font-semibold">
+      Website Sekolah
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- =============== KONTAK =============== -->
+<section id="kontak" class="py-20 px-6 bg-white">
+<h2 class="text-3xl font-bold text-center mb-8">Hubungi Kami</h2>
+
+<form class="max-w-xl mx-auto bg-slate-100 p-6 rounded-xl shadow space-y-4">
+<input type="text" placeholder="Nama" class="w-full px-4 py-3 rounded-lg border">
+<input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg border">
+<textarea rows="4" placeholder="Pesan" class="w-full px-4 py-3 rounded-lg border"></textarea>
+<button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold">
+Kirim Pesan
+</button>
+</form>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer class="bg-indigo-600 text-white text-center py-4">
+© 2026 • Brilian XI RPL
+</footer>
+
+<!-- =============== SCRIPT =============== -->
+<script>
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+btn.onclick = () => menu.classList.toggle("hidden");
+
+const loginLink = document.getElementById("loginLink");
+const auth = JSON.parse(localStorage.getItem("auth"));
+if (auth && auth.isLogin) {
+  loginLink.innerText = "Dashboard";
+  loginLink.href = "data.html";
+}
+</script>
+
+</body>
+</html>
